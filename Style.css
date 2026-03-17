@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #0b1120;
+  color: #e5e7eb;
+  line-height: 1.7;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  background: #020617;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  color: #38bdf8;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
+
+.navbar a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 90px 60px;
+}
+
+.hero-text h1 {
+  font-size: 46px;
+}
+
+.hero-text span {
+  color: #38bdf8;
+}
+
+.buttons {
+  margin-top: 25px;
+}
+
+.btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-right: 15px;
+}
+
+.primary {
+  background: #38bdf8;
+  color: #020617;
+}
+
+.secondary {
+  border: 2px solid #38bdf8;
+  color: #38bdf8;
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 6px solid #38bdf8;
+}
+
+/* SECTIONS */
+.section {
+  padding: 70px 60px;
+}
+
+.dark {
+  background: #020617;
+}
+
+.section h2 {
+  color: #38bdf8;
+  margin-bottom: 20px;
+}
+
+/* PROJECTS */
+.project {
+  margin-bottom: 25px;
+}
+
+/* SKILLS */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.skill {
+  background: #0b1120;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #1e293b;
+}
+
+.skill h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #94a3b8;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+/* PROJECT BOX STYLE */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-box {
+  background: #0b1120;
+  padding: 25px;
+  border-radius: 16px;
+  border: 1px solid #1e293b;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-box h3 {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.project-box p {
+  color: #cbd5f5;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.project-box a {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.project-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 30px rgba(56,189,248,0.25);
+}
